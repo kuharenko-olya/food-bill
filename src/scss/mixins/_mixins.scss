@@ -1,0 +1,44 @@
+@mixin button-link($bg,$color,$padding,$fz,$fw:700,$br:120px,$border:none,$cursor:pointer,$text-d:none) {
+  background: $bg;
+  color: $color;
+  padding: $padding;
+  font-size: $fz;
+  border-radius: $br;
+  border: $border;
+  cursor: $cursor;
+  text-decoration: $text-d;
+  font-weight: $fw;
+}
+
+@mixin roundIcon($bg,$ml,$mr,$width:16px,$padding:12px 12px,$br:19px,$cursor:pointer,$color:$primary-color,$cursor:pointer) {
+  background: $bg;
+  margin-left: $ml;
+  margin-right: $mr;
+  padding: $padding;
+  border-radius: $br;
+  color: $color;
+  width: $width;
+  cursor: $cursor;
+}
+
+@mixin text($color,$fz) {
+  color: $color;
+  font-size: $fz;
+}
+
+@mixin button($top,$right,$bg,$padding,$br,$position:absolute,$border:none,$cursor:pointer) {
+  position: $position;
+  border: $border;
+  cursor: $cursor;
+  top: $top;
+  right: $right;
+  background: $bg;
+  padding: $padding;
+  border-radius: $br;
+}
+
+
+
+
+
+

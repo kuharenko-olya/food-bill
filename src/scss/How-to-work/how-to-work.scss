@@ -1,0 +1,44 @@
+section #how-to-work {
+  margin-top: 100px;
+
+  .block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .image {
+      width: 1020px;
+      height: auto;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      margin-top: 158px;
+      width: 915px;
+
+      p {
+        @include text($color: $grey-color, $fz: 16px);
+        line-height: 1.5;
+        width: 625px;
+        margin-bottom: 29px;
+      }
+
+      .size-text {
+        width: 575px;
+        margin-top: 6px;
+        margin-bottom: 45px;
+      }
+
+      .button {
+        @include button-link($bg: $primary-color, $color: $secondary-color, $padding: 5px 9px, $fz: 16px);
+        text-align: center;
+        width: 160px;
+
+        .icon {
+          @include roundIcon($bg: #fff, $ml: 19px, $mr: -12px);
+        }
+      }
+    }
+  }
+}

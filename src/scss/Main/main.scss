@@ -1,0 +1,88 @@
+//Main
+
+.main {
+  .content {
+    width: 50%;
+
+    h2 {
+      font-size: 75px;
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    p {
+      width: 630px;
+      color: $grey-color;
+      margin-bottom: 40px;
+    }
+
+
+    .icon {
+      //Миксин круга для иконок
+      @include roundIcon($bg: #fff, $ml: 19px, $mr: -12px);
+      text-align: center;
+    }
+
+    .button {
+      @include button-link(
+              $bg: $primary-color,
+              $color: $secondary-color,
+              $padding: 14px 20px,
+              $fz: 16px
+      )
+    }
+
+
+    .social-links {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+      width: 230px;
+      margin-bottom: 123px;
+
+      .icon {
+        @include roundIcon($bg: $color-icon, $ml: 0px, $mr: 0px)
+      }
+
+    }
+  }
+
+  .contacts {
+    background: #fff;
+    box-shadow: 0px 22px 52px rgba(0, 0, 0, 0.07);
+    border-radius: 60px 0px;
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      padding: 60px 0px;
+
+      .column {
+        flex-direction: column;
+        width: 590px;
+        text-align: center;
+        border-right: 1.5px solid $border-color;
+
+        &:nth-child(3) {
+          border: none;
+        }
+
+
+        .title {
+          @include text($color: $black-color, $fz: 16px);
+          margin-bottom: 6px;
+          font-weight: 700;
+        }
+
+        .description {
+          color: $grey-color;
+        }
+
+        .icon {
+          @include roundIcon($bg: $primary-color, $color: $secondary-color, $ml: 0px, $mr: 0px);
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}

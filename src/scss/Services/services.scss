@@ -1,0 +1,38 @@
+section.services {
+  padding: 100px 0;
+  text-align: center;
+
+  .services {
+    display: flex;
+    flex-direction: row;
+    margin-top: 59px;
+    justify-content: center;
+
+    .service {
+      flex-direction: column;
+      border: 2px solid #EEEEEE;
+      border-radius: 60px 0px;
+      width: 370px;
+      margin-right: 30px;
+      padding: 78px 0px;
+
+
+      .title {
+        @include text($color: $black-color, $fz: 26px);
+        margin-bottom: 22px;
+        font-weight: 700;
+      }
+
+      .description {
+        @include text($color: $grey-color, $fz: 16px);
+        padding: 0 20px;
+      }
+
+      .icon {
+        @include roundIcon($bg: $color-icon, $padding: 25px 25px, $br: 40px, $color: $primary-color, $ml: 0, $mr: 0, $width: 25px);
+        margin-bottom: 44px;
+        font-size: 28px;
+      }
+    }
+  }
+}

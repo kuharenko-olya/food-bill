@@ -1,0 +1,68 @@
+@import "../scss/vars/vars";
+@import '../scss/mixins/_mixins';
+@import '../scss/Header/header';
+@import '../scss/Main/main';
+@import "../scss/How-to-work/how-to-work";
+@import '../scss/Services/services';
+//@import 'download-app';
+@import '../scss/Testimonials/testimonials';
+@import "../scss/Subscribe/subscribe";
+@import '../scss/Footer/footer';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans serif;
+  font-size: 16px;
+
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  .img1 {
+    background-image: url('../assets/img/Main-page.jpg');
+    background-size: cover;
+    right: 0;
+    z-index: -1;
+    top: 0;
+    position: absolute;
+    width: 1020px;
+    height: 660px;
+  }
+
+  .title {
+    @include text($color: $black-color, $fz: 40px);
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .subtitle {
+    @include text($color: $primary-color, $fz: 14px);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

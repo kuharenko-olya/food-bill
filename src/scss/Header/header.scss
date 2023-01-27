@@ -1,0 +1,42 @@
+//Header
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 140px;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 847px;
+  }
+
+  .header-nav {
+    display: flex;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 500px;
+      margin-right: 30px;
+      align-items: center;
+
+      .header-link {
+        text-decoration: none;
+        color: $black-color;
+        font-size: 20px;
+
+        &:hover, &:active {
+          color: $primary-color;
+        }
+      }
+
+
+    }
+
+    .button {
+      //Миксин Кнопки ссылки
+      @include button-link($bg: $primary-color, $color: $secondary-color, $padding: 7px 14px, $fz: 14px,$fw:400);
+    }
+  }
+}

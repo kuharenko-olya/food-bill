@@ -1,0 +1,67 @@
+section.download-app {
+  .container {
+    background-image: url("../assets/img/bg/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 86px 30px;
+
+
+    .title {
+      @include text($color: $secondary-color, $fz: 40px);
+      margin-bottom: 50px;
+      width: 460px;
+    }
+
+
+    .download-apps {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+
+      .item {
+        display: flex;
+        background: #fff;
+        padding: 19px 30px;
+        border-radius: 13px;
+        align-items: center;
+
+        .icon {
+          margin-right: 19px;
+        }
+
+        .description {
+          display: flex;
+          flex-direction: column;
+          width: 110px;
+
+          .uppercase-text {
+            text-transform: uppercase;
+            font-size: 11px;
+          }
+
+          .font-size {
+            font-size: 11px;
+          }
+
+          .app {
+            font-weight: 700;
+            font-size: 17px;
+          }
+        }
+
+
+        .icon-apple {
+          font-size: 40px;
+          color: #37474F;
+        }
+      }
+    }
+  }
+}
+
+
